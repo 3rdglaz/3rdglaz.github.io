@@ -70,7 +70,9 @@ This is the correct way to use parameters within powershell, i didnt know.
 
 ```powershell
 Install-Exe $local_instaladores ChromeSetup.exe "Google Chrome"
-...
+.
+.
+.
 ```
 
 ## Requirements
