@@ -23,7 +23,7 @@ Before we start the script, we need to set the correct permission:
 
 As we can see bellow we set the location of the mapped network path, and also set some variables as the path to some _.exe_
 
-```ps1
+```powershell
 Set-Location \\192.168.1.1\Trabalho\Publica\TI
 $local_instaladores = "T:\Publica\TI\"
 $local_antivirus = $local_instaladores+"Nova pasta\Antivirus\"
@@ -43,7 +43,7 @@ The executable
 The program name
 : Just the name that will show in the prompt messages
 
-```ps1
+```powershell
 function Install-Exe([string]$local,[string]$executavel, [string]$programa) {
     Write-Host "[INSTALANDO] $programa" -BackgroundColor Black -ForegroundColor White
     
@@ -68,7 +68,7 @@ function Install-Exe([string]$local,[string]$executavel, [string]$programa) {
 
 This is the correct way to use parameters within powershell, i didnt know.
 
-```ps1
+```powershell
 Install-Exe $local_instaladores ChromeSetup.exe "Google Chrome"
 ...
 ```
