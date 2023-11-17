@@ -52,8 +52,14 @@ else:
     start = 0
 ```
 
-How it work
-: It receives the origin file, get the total number of lines, and for each line untill the line limit, it appends the line to a new file
+### Step by Step
+1. It receives the origin file
+
+2. Get the total number of lines
+
+3. for each line untill the line limit, it appends the line to a new file
+   
+4. repeat until last line of origin file 
 
 ```python
     with open(input_filename, 'r') as input_file:
